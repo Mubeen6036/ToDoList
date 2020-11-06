@@ -1,0 +1,16 @@
+.AppLayout{
+    width: 100%;
+    background-color: beige;
+    padding: 2rem 0;    
+}
+
+@media(min-width : 500px){
+    .AppLayout{
+        width: 70%;
+        padding: 2rem;
+        margin : auto;
+        border : 2px solid rgba(0,0,0);
+        border-radius: 5px;
+    }
+    
+}

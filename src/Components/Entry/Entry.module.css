@@ -1,0 +1,40 @@
+.Entry{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.5px solid rgba(0,0,0);
+    border-radius: 5px;
+    background-color: burlywood;
+    box-sizing: border-box;
+}
+.Entry input{
+    width: 80%;
+    height: 1.5rem;
+}
+.Entry button{
+    margin-top: 0.5rem;
+    width: 15%;
+    height: 2rem;
+    outline: none;
+    border-radius: 5px;
+    background-color:brown;
+    color: white;
+}
+.Entry button:hover{
+    background-color: rgb(253, 66, 66);
+}
+@media(min-width : 500px){
+    .Entry{
+        flex-direction : row;
+    }
+    .Entry input{
+        width: 70%;
+    }
+    .Entry button{
+        margin: 0;
+        width: 20%;
+    }
+}

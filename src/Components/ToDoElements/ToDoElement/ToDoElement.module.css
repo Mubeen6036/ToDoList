@@ -1,0 +1,27 @@
+.ToDoElement{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border : 1px solid rgba(0,0,0,0.5);
+    background-color: rgb(233, 211, 183);
+}
+.Content{
+    overflow: auto;
+}
+.ToDoElement button{
+    height: 1.5rem;
+    border-radius: 5px;
+    color : white;
+    background-color: rgb(129, 78, 78);
+}
+.ToDoElement button:hover{
+    background-color: rgb(199, 126, 126);
+}
+.ButtonWrapper{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
