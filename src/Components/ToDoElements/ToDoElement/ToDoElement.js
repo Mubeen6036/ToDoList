@@ -1,5 +1,4 @@
 import React from 'react';
-import auxiliary from '../../../hoc/Auxiliary';
 import classes from './ToDoElement.module.css';
 const toDoElement = props =>{
 

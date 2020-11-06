@@ -1,0 +1,27 @@
+.EditModule{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.EditModule input{
+    width: 90%;
+}
+.EditModule button{
+    border-radius: 5px;
+    height: 1.5rem;
+    background-color: teal;
+    color: white;
+    margin-top: 1rem;
+}
+.EditModule button:hover{
+    background-color: turquoise;
+}
+@media(min-width : 500px){
+    
+    .EditModule input{
+        width: 80%;
+    }
+
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import ToDoElement from './ToDoElement/ToDoElement'
+import ToDoElement from './ToDoElement/ToDoElement';
+import classes from './ToDoElements.module.css';
 const toDoElements = props =>{
     let toDoElements = null;
     if(props.list){
@@ -12,6 +13,6 @@ const toDoElements = props =>{
             }
         )
     }
-    return toDoElements;
+    return <div className={classes.ToDoElements}>{toDoElements}</div>;
 }
 export default toDoElements;

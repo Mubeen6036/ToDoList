@@ -1,0 +1,24 @@
+.Modal{
+    background-color: white;
+    position: fixed;
+    top : 25%;
+    left: 5%;
+    margin: auto;
+    width : 90%;
+    transition: transform 0.3s ease-in-out;
+    z-index: 500;
+    border-radius: 5px;
+}
+.Open{
+    transform: translateY(0%);
+}
+.Close{
+    transform: translateY(-500%);
+}
+@media(min-width:500px){
+    .Modal{
+        top : 25%;
+        left : 20%;
+        width : 60%;
+    }
+}

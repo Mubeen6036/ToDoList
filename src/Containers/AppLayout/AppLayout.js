@@ -1,8 +1,11 @@
 import React,{Component} from 'react';
-import Entry from '../../Components/Entry/Entry';
+import EditModule from '../../Components/EditModule/EditModule';
+import Form from '../../Components/Form/Form';
 import ToDoElements from '../../Components/ToDoElements/ToDoElements';
-import Auxiliary from '../../hoc/Auxiliary';
+import BackDrop from '../../Components/UI/Backdrop/Backdrop';
+import Modal from '../../Components/UI/Modal/Modal';
 import classes from './AppLayout.module.css';
+
 class AppLayout extends Component{
     state = {
         toDoList : [],
@@ -27,7 +30,9 @@ class AppLayout extends Component{
         const editableContent = this.state.toDoList.filter((el,index)=>{
             return index===editIndex;
         })
-        this.setState({editMode : true, editableItem : editIndex, editableContent : editableContent});
+        this.setState({editMode : true, 
+                        editableItem : editIndex, 
+                        editableContent : editableContent});
     }
     updateHandler = (content) =>{
         let existingList = this.state.toDoList;
@@ -37,12 +42,23 @@ class AppLayout extends Component{
                         editableContent : null,
                         toDoList : existingList});
     }
+    toggleEditModeHandler = () =>{
+        this.setState(
+            {editMode : false,
+            editableItem : null, 
+            editableContent : null})
+    }
 
     render(){
         return(
             <main>
                 <div className = {classes.AppLayout}>
-                    <Entry add = {this.addToListHandler} 
+                    <BackDrop show={this.state.editMode} hide={this.toggleEditModeHandler}/>
+                    <Modal show={this.state.editMode} >
+                        <EditModule update = {this.updateHandler}
+                                    editableContent={this.state.editableContent}/>
+                    </Modal>
+                    <Form add = {this.addToListHandler} 
                             editMode={this.state.editMode}
                             editableItem={this.state.editableItem}
                             editableContent={this.state.editableContent}

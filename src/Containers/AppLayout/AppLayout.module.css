@@ -2,11 +2,14 @@
     width: 100%;
     background-color: beige;
     padding: 2rem 0;    
+    height: 100vh;
+    overflow: auto;
 }
 
 @media(min-width : 500px){
     .AppLayout{
         width: 70%;
+        height: 80vh;
         padding: 2rem;
         margin : auto;
         border : 2px solid rgba(0,0,0);
