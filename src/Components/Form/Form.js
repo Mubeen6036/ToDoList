@@ -7,8 +7,10 @@ const Form = props => {
     }
     return(
         <div className={classes.Entry}>
-            <input ref={inputVariable}/>
-            <button onClick={()=>{props.add(inputVariable.current.value)}}>Add</button>
+            <form className={classes.Form}>
+                <input ref={inputVariable}/>
+                <button onClick={(event)=>{event.preventDefault();props.add(inputVariable.current.value)}}>Add</button>
+            </form>
         </div>
     );
 }

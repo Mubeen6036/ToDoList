@@ -1,39 +1,47 @@
 .Entry{
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    background-color: beige;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #14110f;
     border: 1.5px solid rgba(0,0,0);
     border-radius: 5px;
-    background-color: burlywood;
     box-sizing: border-box;
+    margin: auto;
+    outline: none;
 }
-.Entry input{
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.Form input{
     width: 80%;
     height: 1.5rem;
+    font-weight: bold;
 }
-.Entry button{
+.Form button{
     margin-top: 0.5rem;
     width: 15%;
     height: 2rem;
     outline: none;
     border-radius: 5px;
-    background-color:brown;
+    background-color: #1098f7;
     color: white;
 }
-.Entry button:hover{
-    background-color: rgb(253, 66, 66);
+.Form button:hover{
+    background-color: #6096ba;
 }
 @media(min-width : 500px){
     .Entry{
+        width: 90%;
+    }
+    .Form{
         flex-direction : row;
     }
-    .Entry input{
+    .Form input{
         width: 70%;
     }
-    .Entry button{
+    .Form button{
         margin: 0;
         width: 20%;
     }

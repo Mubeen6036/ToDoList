@@ -1,24 +1,25 @@
 .Modal{
     background-color: white;
     position: fixed;
-    top : 25%;
+    top : 30%;
     left: 5%;
     margin: auto;
     width : 90%;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-out;
     z-index: 500;
     border-radius: 5px;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 .Open{
     transform: translateY(0%);
 }
 .Close{
-    transform: translateY(-500%);
+    transform: translateY(-100vh);
 }
 @media(min-width:500px){
     .Modal{
+        max-width: 350px;
         top : 25%;
-        left : 20%;
         width : 60%;
     }
 }

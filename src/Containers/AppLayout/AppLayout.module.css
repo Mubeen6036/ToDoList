@@ -1,19 +1,20 @@
 .AppLayout{
     width: 100%;
-    background-color: beige;
+    background-color: #7e7f83;
     padding: 2rem 0;    
     height: 100vh;
-    overflow: auto;
 }
 
 @media(min-width : 500px){
     .AppLayout{
         width: 70%;
-        height: 80vh;
-        padding: 2rem;
+        max-width: 600px;
+        height: 85vh;
         margin : auto;
         border : 2px solid rgba(0,0,0);
         border-radius: 5px;
+        margin-top: 5vh;
+        box-sizing: border-box;
     }
     
 }

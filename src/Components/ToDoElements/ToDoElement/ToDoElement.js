@@ -1,5 +1,7 @@
 import React from 'react';
 import classes from './ToDoElement.module.css';
+import editImg from '../../../assets/edit.png';
+import deleteImg from '../../../assets/delete.png';
 const toDoElement = props =>{
 
     return(
@@ -8,8 +10,8 @@ const toDoElement = props =>{
                 {props.children}
             </div>
             <div className={classes.ButtonWrapper}>
-                <button onClick={props.edit}>Edit</button>
-                <button onClick={props.remove}>Delete</button>
+                <img onClick={props.edit} src={editImg} alt={'Edit'}/>
+                <img onClick={props.remove} src={deleteImg} alt={'Delete'}/>
             </div>
         </div>
 

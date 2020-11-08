@@ -6,22 +6,27 @@
     align-items: center;
 }
 .EditModule input{
+    margin-top: 0.5rem;
+    font-weight: bold;
     width: 90%;
 }
 .EditModule button{
     border-radius: 5px;
     height: 1.5rem;
-    background-color: teal;
+    background-color: #697a21;
     color: white;
     margin-top: 1rem;
+    font-weight: bold;
 }
 .EditModule button:hover{
-    background-color: turquoise;
+    background-color: #a6a57a;
+    color: black;
 }
 @media(min-width : 500px){
     
     .EditModule input{
-        width: 80%;
+        width: 90%;
+        height: 1.5rem;
     }
 
 }
